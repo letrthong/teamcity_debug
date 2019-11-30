@@ -1,0 +1,12 @@
+prefix=/opt/linux/usr
+exec_prefix=${prefix}
+libdir=/opt/linux/usr/lib/debug/arm/x64
+includedir=/opt/linux/usr/include
+
+Name: json-c
+Description: A JSON implementation in C
+Version: 0.13.1
+Requires:
+Libs.private: 
+Libs: -L${libdir} -ljson-c
+Cflags: -I${includedir}/json-c
